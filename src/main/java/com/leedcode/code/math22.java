@@ -8,6 +8,8 @@ package com.leedcode.code;
 public class math22 {
 
     public static void main(String[] args) {
+        String str = "123";
+        System.out.println(str.charAt(0));
         System.out.println(search(new int[]{4,5,6,7,8,1,2,3}, 8));
     }
 
