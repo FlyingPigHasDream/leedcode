@@ -9,7 +9,7 @@ public class math29 {
 
     public static void main(String[] args) {
 
-        int array[] = new int[]{23, 11, 5, -7, 12};
+        int array[] = new int[]{23, 11, 5, -30, 12};
 
         System.out.println(sum(array));
     }
@@ -23,9 +23,9 @@ public class math29 {
         int start = 0;
         int end = 0;
 
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length ; i++) {
             int curMax = array[i];
-            for (int j = i + 1; j < array.length; j++) {
+            for (int j = i; j < array.length; j++) {
 
                 if (curMax > res) {
                     start = i;
@@ -35,7 +35,7 @@ public class math29 {
                 }
 
                 if (j < array.length - 1) {
-                    curMax += array[j];
+                    curMax = curMax + array[j + 1];
                 }
             }
         }
